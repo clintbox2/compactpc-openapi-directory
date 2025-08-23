@@ -30,14 +30,8 @@ Our goal is to create the most comprehensive, standards-compliant and up-to-date
 
 If you want to reference this project and you need an icon or even a banner, check our [branding guide](https://github.com/APIs-guru/branding).
 
-The project was started by [Ivan Goncharov](https://github.com/IvanGoncharov) of APIs.guru, it is now maintained by [Mike Ralphson](https://github.com/MikeRalphson) of [Mermade Software](https://github.com/mermade). Check out our other [OpenAPI-related projects](https://github.com/search?q=org%3AMermade+openapi).
-
 APIs.guru provide services and consultancy around the GraphQL and OpenAPI specifications and APIs in general.
-You can contact us at founders@apis.guru / mike.ralphson@gmail.com
-
-The OpenAPI Directory is sponsored by [Speakeasy](https://www.speakeasyapi.dev/?utm_source=apigurus+repo&utm_medium=github+sponsorship) - Your API: Enterprise ready in a click.
-
-[![Speakeasy logo](https://apis.guru/assets/images/speakeasy-github-sponsor-dark.svg)](https://www.speakeasyapi.dev/?utm_source=apigurus+repo&utm_medium=github+sponsorship)
+You can contact us at founders@apis.guru
 
 [![Become a partner](https://opencollective.com/openapi-directory/tiers/partner.svg?avatarHeight=36&width=600)](https://opencollective.com/openapi-directory)
 
@@ -63,13 +57,6 @@ We run our update script at least weekly and automatically revalidate before com
 If you see some APIs are not updated for more than 2 weeks please open [an issue](https://github.com/APIs-guru/openapi-directory/issues/new).
 
 [@seriousme](https://github.com/seriousme) kindly runs a backup validation process based on the official OpenAPI-Specification [JSON Schemas](https://github.com/OAI/OpenAPI-Specification/tree/main/schemas) [here](https://github.com/seriousme/openapi-schema-validator/blob/master/test/realworld/failed.md#results-of-real-world-testing).
-
-Own-Label API Directory
------------------------
-
-![Own-Label logo](branding/own-label.png)
-
-**Do you want an 'own-label' or internal version of the OpenAPI Directory to create your own marketplace or keep track and document both your internal APIs and the external API definitions your organisation depends on? If so contact us now!**
 
 Existing integrations
 --------------------------
