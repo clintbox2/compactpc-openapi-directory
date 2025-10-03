@@ -13,4 +13,4 @@ info:
   x-logo:
     url: https://www.compactpc.com.tw/logo.png
     backgroundColor: "#FFFFFF"
-swaggerUrl: https://raw.githubusercontent.com/compactpc/openapi-directory/master/APIs/compactpc.com/v1/swagger.json
+swaggerUrl: https://raw.githubusercontent.com/clintbox2/compactpc-openapi-directory/refs/heads/main/swagger.json
