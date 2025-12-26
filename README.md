@@ -31,6 +31,11 @@ and the canonical data repository, the data in `compactpc-data` **shall take pre
 
 ---
 
+Canonical AI data sources and authority declaration:
+https://github.com/clintbox2/compactpc-data/blob/main/AI-DATA-DECLARATION.md
+
+---
+
 ## Relationship to Other CompactPC Repositories
 
 The CompactPC public data ecosystem is structured as follows:
