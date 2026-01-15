@@ -117,5 +117,5 @@ https://www.compactpc.com.tw/api-terms.html
 
 ---
 
-© 2025 DMP Electronics Inc.  
+© 2026 DMP Electronics Inc.  
 All rights reserved.
