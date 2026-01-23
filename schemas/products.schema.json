@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CompactPC Products",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "brand": { "type": "string" },
+      "name": { "type": "string" },
+      "category": { "type": "string" },
+      "cpu": { "type": "string" },
+      "ram": { "type": "string" },
+      "storage": { "type": "string" },
+      "price": { "type": "number" },
+      "stock": { "type": "integer" }
+    },
+    "required": ["id","brand","name","category"]
+  }
+}
