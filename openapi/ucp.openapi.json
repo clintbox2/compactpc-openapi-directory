@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "CompactPC UCP API",
+    "description": "Universal Commerce Protocol (UCP) API for CompactPC products, categories, and B2B quotations.\n\nAI Usage Policy: https://www.compactpc.com.tw/ai.txt\nLicense: https://www.compactpc.com.tw/legal/data-license",
+    "version": "1.0.0",
+    "contact": {
+      "name": "CompactPC Technical Support",
+      "email": "info@compactpc.com.tw",
+      "url": "https://www.compactpc.com.tw"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.compactpc.com.tw/ucp/v1",
+      "description": "UCP v1 API Server"
+    }
+  ],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "Retrieve all products",
+        "description": "Returns the complete list of CompactPC products in JSON format",
+        "responses": {
+          "200": {
+            "description": "List of products",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../schemas/products.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "summary": "Retrieve product detail",
+        "description": "Returns detailed information for a specific product",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Product ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product detail",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../schemas/products.schema.json"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "summary": "Retrieve product categories",
+        "description": "Returns the list of product categories",
+        "responses": {
+          "200": {
+            "description": "List of categories",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../schemas/categories.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quote": {
+      "post": {
+        "summary": "Request a B2B quotation",
+        "description": "Submit a request to get a price quotation for selected products",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "products": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "Product ID"
+                    }
+                  },
+                  "contact": {
+                    "type": "object",
+                    "properties": {
+                      "name": { "type": "string" },
+                      "email": { "type": "string" },
+                      "company": { "type": "string" }
+                    }
+                  }
+                },
+                "required": ["products","contact"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Quotation request received",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" },
+                    "quote_id": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
